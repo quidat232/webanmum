@@ -1,0 +1,1055 @@
+/* RESPONSIVE HEIGHT 657px */
+@media (min-width:992px) and (max-width:1024px){
+    .about-items{
+        margin-top: 50px;
+    }
+    #about::before {
+        content: '';
+        background-image: url(../img/KV.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        width: 45vw;
+        height: 300px;
+        bottom: 25vh;
+        left: 0;
+    }
+    #about:after{
+        content: '';
+        background-size: cover;
+        -webkit-background-size: cover;
+        background-position: center top;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 33vh;
+        background-image: url(../img/Shape3.png);
+    }    
+    .about-content p{
+        font-family: 'Open Sans', sans-serif;
+        color: #9963a9;
+        padding: 30px 0 0;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    /* RESPONSIVE SIGNUP */
+    #signUp .signUp-container{
+        background: white;
+        height: 85%;
+        position: absolute;
+        z-index: 100;
+        margin-left: auto;
+        width: 80%;
+        top: 70px;
+        left: 10%;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+    #signUp .signUp-container .signUp-form{
+        height: 100%;
+        position: relative;
+        top: 16vh;
+        left: 5vh;
+    }
+    #signUp .signUp-container::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-image: url(../img/Layer43.png);
+        width: 25vw;
+        height: 65%;
+        background-size: contain;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        z-index: 100
+    }
+    #signUp .signUp-container .signUp-form .input-content{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 13px;
+        padding-right: 100px;
+    }
+    /* EXPERIENCE RESPONSIVE */
+    .experience-img img{
+        width: 500px;
+    }
+    #experience .experience-carousel .slide-card{
+        background: #ffe6f9;
+        width: 25vw;
+        height: 42vh;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        margin: 10px;
+    }
+    #experience .experience-carousel .slide-card .slide-img{
+        background: #fff;
+        width: 23.5vw;
+        height: 21vh;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    /* FOOTER RESPONSIVE */
+    #footer {
+        position: relative;
+        background-image: url(../img/Capture.PNG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 20vh;
+    }
+    #footer .footer-join .join-btn{
+        background: white;
+        color: #d190c0;
+        box-shadow: 0px -4px 22.56px 1.44px rgba(89, 17, 98, 0.5);
+        border-radius: 26px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 26px;
+        -ms-border-radius: 26px;
+        -o-border-radius: 26px;
+        font-size: 16px;
+        font-weight: bold;
+        width: 180px;
+        height: 50px;
+        transition: all .5s;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -ms-transition: all .5s;
+        -o-transition: all .5s;
+    }
+}
+@media (min-width:768px) and (max-width:992px){
+    /* ABOUT RESPONSIVE */
+   #about .about-logo img{
+        width: 300px;
+        height: auto;
+    }
+    .about-content p{
+        width: 85%;
+        margin-left: auto;
+    }
+    #about:after{
+        content: '';
+        background-size: cover;
+        -webkit-background-size: cover;
+        background-position: center top;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 20vh;
+        background-image: url(../img/Shape3.png);
+        z-index: 20;
+    }
+    #about::before{
+        content: '';
+        background-image: url(../img/KV.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        width: 40vw;
+        height: 300px;
+        bottom: 10vh;
+        left: 1vw;
+    }
+    #about .about-content p {
+        font-family: 'Open Sans', sans-serif;
+        color: #9963a9;
+        font-weight: bold;
+        font-size: 13px;
+    }
+    #about .about-img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+    }
+    #about .about-img img {
+        width: 360px;
+        height: auto;
+    }
+    #about .about-img-footer img{
+        width: 100%;
+        position: relative;
+        z-index: 20;
+        height: 240px;
+    }
+    /* SIGNUP RESPONSIVE */
+    #signUp .signUp-container::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-image: url(../img/Layer43.png);
+        width: 25vw;
+        height: 100%;
+        background-size: contain;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        z-index: 100;
+    }
+    
+    #signUp .signUp-container .signUp-form {
+        height: 100%;
+        position: relative;
+        top: 15vh;
+        left: 5vh;
+    }
+    #signUp .signUp-container .signUp-form .input-content {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        padding-right: 50px
+    }
+    #signUp .signUp-container .inputBox input, #signUp .signUp-container .inputBox select{
+        width: 80%;
+        padding: 5px 0;
+        font-size: 16px;
+        color: #d190c0;
+        margin-bottom: 10px;
+        border: none;
+        border-bottom: 1px solid #d190c0;
+        background: transparent;
+        font-weight: bold;
+        outline: none;
+    }
+    #experience .experience-img img {
+        width: 600px;
+        height: 100px;
+    }
+    #experience .experience-carousel .slide-card {
+        background: #ffe6f9;
+        width: 27vw;
+        height: 43vh;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        padding-top: 10px;
+        margin: 10px 15px
+    }
+    #experience .experience-carousel .slide-card .slide-img {
+        background: #fff;
+        margin: 0px 10px 10px;
+        width: 23vw;
+        height: 20vh;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    #experience .experience-carousel .slide-card .slide-title h3 {
+        color: #bf6bae;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Open Sans', sans-serif;
+        padding: 0 5px;
+    }
+    #experience .experience-carousel .slide-card .slide-title p {
+        font-size: 12px;
+        color: #9b6eae;
+        padding: 5px 10px 0;
+    }
+    #experience .experience-carousel button.owl-prev{
+        position: absolute;
+        left: 0;
+        top: 40%;
+        opacity: 0.7;
+        outline: none;
+    }
+    #experience .experience-carousel button.owl-next{
+        position: absolute;
+        right: 0;
+        top: 40%;
+        opacity: 0.7;
+        outline: none
+    }
+    #experience .experience-carousel button.owl-prev,
+    #experience .experience-carousel button.owl-next{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    #experience .experience-carousel button.owl-prev span, #experience .experience-carousel button.owl-next span{
+        font-size: 70px;
+        line-height: 28px;
+        color: white;
+        opacity: 0.7;
+        background: transparent;
+    }
+    #footer .footer-join .join-btn{
+        font-size: 18px;
+        font-weight: bold;
+        width: 180px;
+        
+    }
+    #footer .footer-content {
+        display: flex;
+        position: absolute;
+        bottom: 10px;
+        left: 1%;
+    }
+    #footer .footer-content .card-img{
+        margin-right: 0px;
+        text-align: center;
+    }
+}
+@media (min-width:576px) and (max-width:768px) {
+    .header-content .row {
+        flex-wrap: nowrap;
+    }
+    /* RESPONSIVE ABOUT */
+    #about::before{
+        content: '';
+        background-image: url(../img/KV.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        width: 45vw;
+        height: 200px;
+        bottom: 28vh;
+        left: 0
+    }
+    .about-logo img{
+        width: 200px;
+        height: auto;
+    }
+    .about-content p {
+        font-family: 'Open Sans', sans-serif;
+        color: #9963a9;
+        padding: 10px 0 0;
+        font-weight: 500;
+        font-size: 14px;
+        width: 80%;
+        margin-left: auto;
+    }
+    /* RESPONSIVE signUP */
+    #signUp .signUp-container{
+        background: white;
+        height: 570px;
+        position: absolute;
+        z-index: 100;
+        margin: auto;
+        width: 80%;
+        top: 7%;
+        left: 10%;
+    }
+    #signUp .signUp-container::before{
+        content: '';
+        position: absolute;
+        top: -30px;
+        left: 0;
+        background-image: url(../img/dangkynhanmau.png);
+        width: 100%;
+        height: 13vh;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+    #signUp .signUp-container::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-image: url(../img/Layer43.png);
+        width: 26vw;
+        height: 100%;
+        background-size: cover;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        z-index: 100;
+        opacity: 0;
+    }
+    #signUp .signUp-container .signup-form-items{
+        width: 100%;
+        margin-left: auto;
+        height: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    #signUp .signUp-container .signUp-form{
+        height: 100%;
+        position: relative;
+        top: 7vh;
+        left: 5vh;
+    }
+    .signUp-form .input-form-home {
+        order:4;
+    }
+    .signUp-form .input-form-phone {
+        order: 3;
+    }
+    .signUp-form .input-form-street {
+        order: 5;
+    }
+    .signUp-form .input-form-wards {
+        order: 6;
+    }
+    .signUp-form .input-form-county {
+        order:7;
+    }
+    .signUp-form .input-form-city {
+        order: 8;
+    }
+    .signUp-form .input-form-milk {
+        order: 9;
+    }
+    .signUp-form .input-form-address{
+        order: 10;
+    }
+    .signUp-form .input-form-cb {
+        order: 11;
+    }
+    .signUp-form .signUp-success {
+        order: 12;
+    }
+    input[type="checkbox"] + label{
+        opacity: 1;
+        cursor: pointer;
+        padding: 0;
+    }
+    #signUp .signUp-container .signUp-form .inputCheckbox{
+        color: #d190c0;
+        font-weight: bold;
+        text-align: center;
+        padding: 5px;
+        font-size: 16px;
+    }
+    #signUp .signUp-container .signUp-btn{
+        background: white;
+        color: #d190c0;
+        box-shadow: 0px -4px 22.56px 1.44px rgba(89, 17, 98, 0.5);
+        border-radius: 26px;
+        -webkit-border-radius: 26px;
+        -moz-border-radius: 26px;
+        -ms-border-radius: 26px;
+        -o-border-radius: 26px;
+        font-size: 18px;
+        font-weight: bold;
+        width: 150px;
+        transition: all .5s;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -ms-transition: all .5s;
+        -o-transition: all .5s;
+        top: 0px;
+        right: 10%;
+    }
+    #signUp .signUp-container .signUp-success {
+        width: 80%;
+        margin: auto;
+    }
+    #signUp .signUp-container .signUp-img-father::before{
+        content: '';
+        position: absolute;
+        top: -15px;
+        left: 0;
+        background-image: url(../img/dangkynhanmau.png);
+        width: 100%;
+        height: 70px;
+        background-repeat: no-repeat;
+        background-position: center 100%;
+        background-size: contain;
+    }
+    #signUp .signUp-container .signUp-form .input-content p {
+        margin-bottom: 0px;
+    }
+    #signUp .signUp-container .inputBox input, #signUp .signUp-container .inputBox select{
+        width: 80%;
+        padding: 4px 0;
+        font-size: 16px;
+        color: #d190c0;
+        margin-bottom: 10px;
+        border: none;
+        border-bottom: 1px solid #d190c0;
+        background: transparent;
+        font-weight: bold;
+        outline: none;
+    }
+    /* RESPONSIVE EXPERIENCE */
+    #experience .experience-img img{
+        width: 400px;
+        height: 120px;
+        padding-top: 40px;
+    }
+    #experience .experience-carousel .slide-card{
+        background: #ffe6f9;
+        width: 40vw;
+        height: 50vh;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        padding-top: 10px;
+        margin: 10px 20px;
+    }
+    #experience .experience-carousel .slide-card .slide-img{
+        background: #fff;
+        width: 37vw;
+        height: 25vh;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    /* RESPONSIVE FOOTER */
+    #footer .footer-join .join-btn{
+        font-size: 15px;
+        font-weight: bold;
+        width: 150px;
+        height: 50px;
+    }
+    #footer .footer-join {
+        padding-top: 30px;
+        position: absolute;
+        top: 0px;
+        left: 40%;
+        z-index: 99;
+    }
+    #footer .footer-content{
+        left: 0;
+    }   
+    #footer .footer-content .card-img img{
+        width: 150px;
+        height: 25px;
+    }
+}
+@media (max-width: 576px) {
+    #header .row {
+        flex-wrap: nowrap;
+    }
+    #header .header-content {
+        padding: 15px 25px;
+    }
+    /* RESPONSIVE ABOUT */
+    .about-items{
+        margin-top: 0;
+    }
+    #about::before{
+        content: '';
+        background-image: url(../img/KV.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        width: 34vw;
+        height: 130px;
+        bottom: 16vh;
+        left: 15vw;
+    }
+    #about:after{
+        content: '';
+        background-size: cover;
+        -webkit-background-size: cover;
+        background-position: center top;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 20vh;
+        background-image: url(../img/Shape3.png);
+    }
+    .about-item{
+        width: 100%;
+        margin-left: auto;
+        text-align: center !important;
+    }
+
+    #about .about-logo img{
+        width: 300px;
+        height: auto;
+        margin-top: 85px;
+    }
+    #about .about-content p{
+        font-family: 'Open Sans', sans-serif;
+        color: #9963a9;
+        padding: 10px 30px;
+        font-weight: bold;
+        font-size: 13px;
+        width: 100%;
+        margin: auto;
+    }
+
+    /* RESPONSIVE SIGNUP */
+    #signUp .signUp-container::before{
+        content: '';
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background-image: url(../img/dangkynhanmau.png);
+        width: 100%;
+        height: 13vh;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+    #signUp .signUp-container::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-image: url(../img/Layer43.png);
+        width: 26vw;
+        height: 100%;
+        background-size: cover;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        z-index: 100;
+        opacity: 0;
+    }
+    #signUp .signUp-container .signUp-form{
+        height: 100%;
+        position: relative;
+        top: 5vh;
+        left: 5vh;
+    }
+    #signUp .signUp-container .signup-form-items{
+        width: 100%;
+        margin-left: auto;
+        height: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    #signUp .signUp-container .signUp-form .input-content{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        padding-right: 10px;
+    }
+    #signUp .signUp-container .inputBox input, 
+    #signUp .signUp-container .inputBox select{
+        width: 80%;
+        padding: 5px 0;
+        font-size: 13px;
+        color: #d190c0;
+        margin-bottom: 10px;
+        border: none;
+        border-bottom: 1px solid #d190c0;
+        background: transparent;
+        font-weight: bold;
+        outline: none;
+    }
+    #signUp .signUp-container .inputBox label, 
+    #signUp .signUp-container .inputBox option {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 8px 0;
+        font-size: 14px;
+        color: #d190c0;
+        font-weight: bold;
+        pointer-events: none;
+        transition: .5s;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+    }
+    #signUp .signUp-container .signUp-form .inputCheckbox {
+        color: #d190c0;
+        font-weight: bold;
+        text-align: center;
+        padding: 5px;
+        font-size: 14px;
+    }
+    #signUp .signUp-container .signUp-btn {
+        background: white;
+        color: #d190c0;
+        box-shadow: 0px -4px 14.56px 1.44px rgba(89, 17, 98, 0.5);
+        border-radius: 26px;
+        -webkit-border-radius: 26px;
+        -moz-border-radius: 26px;
+        -ms-border-radius: 26px;
+        -o-border-radius: 26px;
+        font-size: 14px;
+        font-weight: bold;
+        width: 120px;
+        transition: all .5s;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -ms-transition: all .5s;
+        -o-transition: all .5s;
+        right: 8%;
+    }
+    .signUp-form .input-form-home {
+        order:4;
+    }
+    .signUp-form .input-form-phone {
+        order: 3;
+    }
+    .signUp-form .input-form-street {
+        order: 5;
+    }
+    .signUp-form .input-form-wards {
+        order: 6;
+    }
+    .signUp-form .input-form-county {
+        order:7;
+    }
+    .signUp-form .input-form-city {
+        order: 8;
+    }
+    .signUp-form .input-form-milk {
+        order: 9;
+    }
+    .signUp-form .input-form-address{
+        order: 10;
+    }
+    .signUp-form .input-form-cb {
+        order: 11;
+    }
+    .signUp-form .signUp-success {
+        order: 12;
+    }
+    #signUp .signUp-container .signUp-form .input-content p{
+        margin-bottom: 0px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    /* RESPONSIVE EXPERIENCE  */
+    #experience .experience-img img{
+        width: 65vw;
+        height: 10vh;
+        padding-top:0px; 
+    }
+    #experience .experience-carousel .slide-card{
+        background: #ffe6f9;
+        width: 88vw;
+        height: 55vh;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        padding-top: 10px;
+        margin: 10px 22px;
+    }
+    #experience .experience-carousel .slide-card .slide-items{
+        padding: 10px 15px;
+    }
+    #experience .experience-carousel .slide-card .slide-img{
+        background: #fff;
+        width: 83vw;
+        height: 30vh;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    #experience .experience-carousel .slide-card .slide-title p{
+        font-size: 12px;
+        color: #9b6eae;
+        padding: 5px 10px 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    #experience .experience-carousel button.owl-prev span, #experience .experience-carousel button.owl-next span{
+        font-size: 50px;
+        line-height: 24px;
+        color: white;
+        opacity: 0.7;
+        background: transparent;
+    }
+    #experience .experience-carousel button.owl-prev, 
+    #experience .experience-carousel button.owl-next{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        top: 40%;
+    }
+    /* RESPONSIVE FOOTER  */
+    #footer{
+        position: relative;
+        height: 25vh
+    }
+    #footer .footer-join{
+        padding-top: 30px;
+        position: absolute;
+        top: -10px;
+        left: 37%;
+        z-index: 99;
+    }
+    #footer .footer-join .join-btn{
+        background: white;
+        color: #d190c0;
+        box-shadow: 0px -4px 22.56px 1.44px rgba(89, 17, 98, 0.5);
+        border-radius: 26px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 26px;
+        -ms-border-radius: 26px;
+        -o-border-radius: 26px;
+        font-size: 16px;
+        font-weight: bold;
+        width: 160px;
+        height: 50px;
+        transition: all .5s;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -ms-transition: all .5s;
+        -o-transition: all .5s;
+    }
+    #footer .footer-content{
+        position: absolute;
+        text-align: center;
+        left: 0;
+        top: 50%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #footer .footer-content .card-img{
+        margin-right: 0px;
+    }
+    a.hover-img img{
+        width: 40vw;
+        height: 25px;
+    }
+    #footer .footer-content .card-img{
+        width: 45%;
+        margin: auto;
+    }
+    /* HEADER btn responsive */
+    #header .header-menu .header-btn > div::before,
+     #header .header-menu .header-btn > div::after{
+        top: -8px;
+    }
+    #header .header-menu .header-btn > div::after{
+        top: 8px;
+    }
+    #header .header-logo img {
+        width: 100px;
+        height: 40px;
+    }
+}
+@media (max-width: 376px){
+    #header .header-content{
+        padding: 10px 25px;
+    }
+    /* RESPONSIVE ABOUT */
+    #about::before{
+        content: '';
+        background-image: url(../img/KV.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        width: 57vw;
+        height: 23vh;
+        bottom: 18vh;
+        left: 20vw;
+    }
+    #about .about-logo img{
+        width: 300px;
+        height: auto;
+        margin-top: 30px;
+    }
+    #about .about-content p{
+        font-family: 'Open Sans', sans-serif;
+        color: #9963a9;
+        font-weight: bold;
+        font-size: 13px;
+    }
+    #about .about-img img{
+        width: 200px;
+        height: auto;
+        margin-top: 50px;
+    }
+    #about .about-img-footer img{
+        width: 100%;
+        position: relative;
+        z-index: 20;
+        height: 200px;
+        margin-top: 57px;
+    }
+    /* RESPONSIVE signUp */
+    #signUp .signUp-container{
+        background: white;
+        height: 85%;
+        position: absolute;
+        z-index: 100;
+        margin: auto;
+        width: 80%;
+        top: 40px;
+        left: 10%;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+    #signUp .signUp-container .signUp-form .input-content p{
+        margin-bottom: 0px;
+        font-size: 12px;
+        padding-right: 20px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: none;
+    }
+    #signUp .signUp-container .signUp-form .input-checkbox{
+        position: absolute;
+        top: -5vh;
+        left: -2vw;
+    }
+    input[type="checkbox"] + label{
+        opacity: 1;
+        cursor: pointer;
+        padding: 10px 40px 0 0px;
+        font-size: 13px;
+    }
+    #signUp .signUp-container .signUp-form .input-content{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 10px;
+        padding-right: 10px;
+    }
+    #signUp .signUp-container .inputBox input, #signUp .signUp-container .inputBox select{
+        width: 80%;
+        padding: 4px 0;
+        font-size: 14px;
+        margin-bottom: 10px;
+        border: none;
+        border-bottom: 1px solid #d190c0;
+        background: transparent;
+        font-weight: bold;
+        outline: none;
+    }
+    #signUp .signUp-container .inputBox label, #signUp .signUp-container .inputBox option{
+        padding: 5px 0;
+        font-size: 14px;
+    }
+    #signUp .signUp-container .signUp-form .inputCheckbox{
+        color: #d190c0;
+        font-weight: bold;
+        text-align: center;
+        padding: 5px;
+        font-size: 14px;
+    }
+    #signUp .signUp-container .signUp-btn{
+        background: white;
+        color: #d190c0;
+        box-shadow: 0px -4px 14.56px 1.44px rgba(89, 17, 98, 0.5);
+        border-radius: 26px;
+        -webkit-border-radius: 26px;
+        -moz-border-radius: 26px;
+        -ms-border-radius: 26px;
+        -o-border-radius: 26px;
+        font-size: 16px;
+        font-weight: bold;
+        width: 120px;
+        transition: all .5s;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -ms-transition: all .5s;
+        -o-transition: all .5s;
+        transform: translateY(25px);
+    }
+    #signUp .signUp-success{
+        margin-top: 0px;
+        position: absolute;
+        bottom: 13%;
+        left: 0;
+    }
+    /* RESPONSIVE EXPERIENCE  */
+    #experience .experience-carousel{
+        margin-top: 10px;
+        position: relative;
+    }
+    #experience .experience-img img{
+        width: 320px;
+        height: 70px;
+        padding-top: 22px;
+    }
+    #experience .experience-carousel .slide-card{
+        background: #ffe6f9;
+        width: 320px;
+        height: 250px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        padding-top: 10px;
+        margin: 10px 10px;
+    }
+    #experience .experience-carousel .slide-card .slide-img{
+        background: #fff;
+        background-position: center center;
+        width: 78vw;
+        height: 130px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    #experience .experience-carousel .slide-card .slide-title h3{
+        color: #bf6bae;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Open Sans', sans-serif;
+        padding: 5px 0 0px;
+    }
+    #experience .experience-carousel .slide-card .slide-title p{
+        font-size: 12px;
+        color: #9b6eae;
+        padding: 0px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    #experience .experience-carousel button.owl-prev span, #experience .experience-carousel button.owl-next span{
+        font-size: 50px;
+        line-height: 24px;
+        color: white;
+        opacity: 0.7;
+        background: transparent;
+    }
+    #experience .experience-carousel button.owl-prev, 
+    #experience .experience-carousel button.owl-next{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    /* RESPONSIVE FOOTER  */
+    #footer .footer-join{
+        padding-top: 30px;
+        position: absolute;
+        top: -15px;
+        left: 30%;
+        z-index: 99;
+    }
+    a.hover-img img{
+        width: 40vw;
+        height: 25px;
+    }
+    #footer .footer-content .card-img{
+        width: 45%;
+        margin: auto;
+    }
+}
