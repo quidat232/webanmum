@@ -369,7 +369,7 @@ input[type="checkbox"] + label {
   }
   
   input[type="checkbox"] + label::before {
-    content: "\2714";
+    content: "\2713";
     border: 1px solid #d190c0;
     border-radius: 3px;
     display: inline-block;
@@ -391,9 +391,10 @@ input[type="checkbox"] + label {
   }
   
   input[type="checkbox"]:checked+ label::before {
-    background-color: #fff;
+    background-color: #d190c0;
     border-color: #d190c0;
     color: #fff;
+    padding: 0 5px;
   }
 
 /* *******EXPERIENCE******** */
@@ -405,6 +406,18 @@ input[type="checkbox"] + label {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100% center;
+}
+#experience::after {
+    content: '';
+    background-image: url(../img/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 30vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 .experience-content{
     width: 92vw;
@@ -503,22 +516,20 @@ input[type="checkbox"] + label {
    position: relative;
     height: 20vh;
 }
-#footer .footer-img {
+/* #footer .footer-img {
     background-image: url(../img/footer.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 69% 30%;
     height: 60vh;
-}
-#footer .footer-join  {
-    padding-top: 20px;
-    position: absolute;
-    top: 0;
-    left: 42%;
+} */
+.footer-join  {
+    position: relative;
+    top: 40px;
     z-index: 99;
 }
 
-#footer .footer-join .join-btn {
+.footer-join .join-btn {
     background: white;
     color:#d190c0;
     box-shadow: 0px -4px 22.56px 1.44px rgba(89, 17, 98, 0.5);
@@ -538,20 +549,24 @@ input[type="checkbox"] + label {
     -o-transition: all .5s;
     font-family:vagRounded-Black;
 }
-#footer .footer-join .join-btn:hover {
+ .footer-join .join-btn:hover {
     background:#d190c0;
     color:#fff;
     box-shadow: 0px -4px 22.56px 1.44px rgba(89, 17, 98, 0.5);
 }
-#footer .footer-content{
-    position: absolute;
+ .footer-content{
     text-align: center;
-    /* left: 17.84vw; */
-    bottom: 5%;
     margin: 0 5%;
     display: flex;
     list-style: none;
-    padding-left: 0;
+    position: relative;
+    top: 10vh;
+    z-index: 20;
+    padding-left: 0px;
+}
+#footer .footer-content >li{
+    display: inline-block;
+    margin: auto;
 }
 #footer .footer-content >li >.card-img {
     margin-right: 45px;
