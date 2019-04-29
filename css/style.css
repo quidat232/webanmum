@@ -1,3 +1,11 @@
+@font-face {
+    src: url('../ANMUMWEBFONT/VAG-Rounded-Std/VNF-VAGRounded-Black.ttf');
+    font-family:vagRounded-Black;
+}
+@font-face {
+    src: url('../ANMUMWEBFONT/VNF-VAGRounded-Light/VNF-VAGRounded-Light.ttf');
+    font-family:vagRounded-Light;
+}
 body {
     padding: 0;
     margin: 0;
@@ -32,7 +40,7 @@ body {
 #header .header-menu .toggler {
     position: absolute;
     top: 0;
-    right: 15%;
+    right: 0;
     z-index: 2;
     cursor: pointer;
     width: 50px;
@@ -132,18 +140,6 @@ body {
     height: 100vh;
     padding-top: 50px;
 }
-#about::before{
-    content: '';
-    background-image: url(../img/KV.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: absolute;
-    width: 34vw;
-    height: 300px;
-    bottom: 25vh;
-    left: 0;
-}
 #about:after{
     content: '';
     background-size: cover;
@@ -153,40 +149,62 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 35vh;
+    height: 22vh;
     background-image: url('../img/Shape3.png');
 }
+/* #about .about-imgs::after{
+    content: '';
+    background-image: url(../img/KV.png);
+    background-size: cover;
+    -webkit-background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: absolute;
+    width: 46.34vw;
+    min-height: 63.013vh;
+    height: auto;
+    top: -50px;
+    left: 0;
+} */
+/* #about .about-imgs{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
 .about-items{
     margin-top: 100px;
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    width: 100%;
+    margin: auto;
+
 }
-.about-item{
+/* .about-item{
     width: 50%;
     margin-left: auto;
     text-align: right !important;
+} */
+.about-item{
+    position: relative;
+    left: 5%;
 }
 .about-imgs {
-    margin-top: 60px;
-}
-.about-img {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-.about-img img{
-    width: 500px;
-    height: auto;
+    position: relative;
+    right: 5%;
 }
 .about-logo img{
-    width: 350px;
+    width: 100%;
     height: auto;
 }
 .about-content p {
     font-family: 'Open Sans', sans-serif;
     color: #9963a9;
-    padding: 25px 0 0;
+    padding: 25px 30px 0 30px;
     font-weight: 500;
     font-size: 17px;
-    width: 70%;
     margin-left: auto;
 }
 .about-img-footer img{
@@ -207,18 +225,19 @@ body {
 }
 #signUp .signUp-container {
     background: white;
-    height: 85%;
-    position: absolute;
+    height: 82.34vh;
+    position: relative;
     z-index: 100;
     margin: auto;
-    width: 80%;
-    top: 70px;
-    left: 10%;
+    width: 74.89vw;
+    /* top: 70px;
+    left: 10%; */
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+    padding: 40px 0;
 }
 #signUp .signUp-container::after{
     content: '';
@@ -226,10 +245,10 @@ body {
     bottom: 0;
     left: 0;
     background-image: url(../img/Layer43.png);
-    width: 26vw;
-    height: 100%;
-    background-size: cover;
-    background-position: right bottom;
+    width: 27vw;
+    height: 72vh;
+    background-size: contain;
+    background-position: left bottom;
     background-repeat: no-repeat;
     z-index: 100;
 }
@@ -237,21 +256,20 @@ body {
     content: '';
     position: absolute;
     top: -50px;
-    left: 0;
+    right: 20.69vw;
     background-image: url(../img/dangkynhanmau.png);
-    width: 100%;
-    height: 20vh;
+    width: 25.84vw;
+    height: 21.11vh;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
 }
 #signUp .signUp-container .signup-form-items{
-    width: 70%;
-    margin-left: auto;
-    height: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
+    width: 35.51vw;
+    height: 62.40vh;
+    margin: auto;
+    padding-left: 10.15vw;
+    padding-top: 7.01vh;
 }
 #signUp .signUp-container .inputBox{
     position: relative;
@@ -296,19 +314,18 @@ body {
 }
 #signUp .signUp-container .signUp-form {
     height: 100%;
-    position: relative;
-    top: 18vh;
-    left: 5vh;
+    width: 35.51vw;
+    height: 62.40vh;
 }
 #signUp .signUp-container .signUp-form  .input-content {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    padding-right: 100px;
+    font-family:vagRounded-Light;
+    font-size: 14px;
+    padding-right: 50px;
 }
 
 #signUp .signUp-container .signUp-btn{
     background: white;
-    color:#d190c0;
+    color: #d190c0;
     position: relative;
     top: 20px;
     box-shadow: 0px -4px 22.56px 1.44px rgba(89, 17, 98, 0.5);
@@ -319,7 +336,9 @@ body {
     -o-border-radius: 26px;
     font-size: 20px;
     font-weight: bold;
-    width: 150px;
+    width: 190px;
+    height: 50px;
+    letter-spacing: 1px;
     transition: all .5s;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
@@ -342,6 +361,8 @@ input[type="checkbox"] + label {
     opacity: 1;
     cursor: pointer;
     padding: 10px;
+    color: #d190c0;
+    text-decoration: underline;
   }
   
   input[type="checkbox"] {
@@ -350,17 +371,21 @@ input[type="checkbox"] + label {
   
   input[type="checkbox"] + label::before {
     content: "\2714";
-    border: 0.1em solid #d190c0;
-    border-radius: 0.2em;
+    border: 1px solid #d190c0;
+    border-radius: 3px;
     display: inline-block;
     width: 25px;
     height: 25px;
-    margin-right: 0.2em;
+    margin-right: 1.2em;
     vertical-align: bottom;
     color: transparent;
     background-color: #d190c0;
     transition: .2s;
-  }
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
   
   input[type="checkbox"] + label:active::before {
     transform: scale(0);
@@ -382,6 +407,9 @@ input[type="checkbox"] + label {
     background-repeat: no-repeat;
     background-position: 100% center;
 }
+.experience-content{
+    width: 92vw;
+}
 #experience .experience-img {
     text-align: center;
 }
@@ -391,14 +419,14 @@ input[type="checkbox"] + label {
 }
 #experience .experience-carousel .slide-card{
     background: #ffe6f9;
-    width: 20vw;
-    height: 45vh;
+    width: 22vw;
+    height: 48vh;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    margin: 10px;
+    margin: auto;
 }
 
 #experience .experience-carousel .slide-card .slide-items{
@@ -406,8 +434,8 @@ input[type="checkbox"] + label {
 }
 #experience .experience-carousel .slide-card .slide-img {
     background: #fff;
-    width: 18.5vw;
-    height: 21vh;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -422,7 +450,7 @@ input[type="checkbox"] + label {
     padding: 5px 0;
 }
 #experience .experience-carousel .slide-card .slide-title p{
-    font-size: 12px;
+    font-size: 11px;
     color: #9b6eae;
     font-weight: 500;
 }
@@ -484,7 +512,7 @@ input[type="checkbox"] + label {
     height: 60vh;
 }
 #footer .footer-join  {
-    padding-top: 30px;
+    padding-top: 20px;
     position: absolute;
     top: 0;
     left: 42%;
@@ -502,13 +530,14 @@ input[type="checkbox"] + label {
     -o-border-radius: 26px;
     font-size: 20px;
     font-weight: bold;
-    width: 200px;
+    width: 220px;
     height: 60px;
     transition: all .5s;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     -ms-transition: all .5s;
     -o-transition: all .5s;
+    font-family:vagRounded-Black;
 }
 #footer .footer-join .join-btn:hover {
     background:#d190c0;
@@ -518,25 +547,19 @@ input[type="checkbox"] + label {
 #footer .footer-content{
     position: absolute;
     text-align: center;
-    left: 0;
-    bottom: 0;
+    left: 17.84vw;
+    bottom: -5vh;
     display: flex;
+    list-style: none;
+    padding-left: 0;
 }
-#footer .footer-content .card-img {
+#footer .footer-content >li >.card-img {
     margin-right: 30px;
 }
 a.hover-img {
     width: 100%;
     padding-bottom: 10px;
 }
-/* #footer .footer-content .card-img .hover-img:hover {
-    cursor: pointer;
-    transform: translateY(-5px);
-    -webkit-transform: translateY(-5px);
-    -moz-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    -o-transform: translateY(-5px);
-} */
 .card-img a:hover img{
     transform: translateY(-5px);
     -webkit-transform: translateY(-5px);
@@ -544,10 +567,10 @@ a.hover-img {
     -ms-transform: translateY(-5px);
     -o-transform: translateY(-5px);
 }
-
+/* 
 #footer .footer-content .card-img:last-child{
     margin-right: 0px;
-}
+} */
 .fp-scrollable{
     overflow: hidden;
 }
