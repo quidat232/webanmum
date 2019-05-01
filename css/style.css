@@ -77,10 +77,6 @@ body {
   .modal a.close-modal {
       background-image: none;
   }
-.popup-abso {
-    position: absolute;
-    right: 0;
-}
 #header .header-menu .header-btn, .popup-btn{
     border-radius: 50%;
     background-color: rgb(27, 66, 145);
@@ -151,30 +147,9 @@ body {
     height: 22vh;
     background-image: url('../img/Shape3.png');
 }
-/* #about .about-imgs::after{
-    content: '';
-    background-image: url(../img/KV.png);
-    background-size: cover;
-    -webkit-background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center top;
-    position: absolute;
-    width: 46.34vw;
-    min-height: 63.013vh;
-    height: auto;
-    top: -50px;
-    left: 0;
-} */
-/* #about .about-imgs{
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-} */
 .about-items{
     position: relative;
-    top: 25vh;
+    top: 20%;
     min-width: 80%;
     width: auto;
     margin: auto;
@@ -186,13 +161,10 @@ body {
     margin-left: auto;
     text-align: right !important;
 } */
-.about-item{
-    position: relative;
-    left: 5%;
-}
-.about-imgs {
-    position: relative;
-    right: 5%;
+
+.about-imgs img{
+    position: fixed;
+    bottom: 12%;
 }
 .about-logo img{
     width: 100%;
@@ -224,11 +196,11 @@ body {
 }
 #signUp .signUp-container {
     background: white;
-    height: 82.34vh;
+    height: 83vh;
     position: relative;
     z-index: 100;
     margin: auto;
-    width: 100%;
+    width: 80%;
     /* top: 70px;
     left: 10%; */
     border-radius: 20px;
@@ -236,39 +208,51 @@ body {
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    padding: 40px 0;
+    display: flex;
 }
-#signUp .signUp-container::after{
+/* #signUp .signUp-container::after{
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     background-image: url(../img/Layer43.png);
-    width: 27vw;
-    height: 72vh;
+    width: 100%;
+    height: 100%;
     background-size: contain;
     background-position: left bottom;
     background-repeat: no-repeat;
     z-index: 100;
-}
+} */
 #signUp .signUp-container::before{
     content: '';
     position: absolute;
     top: -50px;
-    right: 17.69vw;
+    right: 0;
     background-image: url(../img/dangkynhanmau.png);
-    width: 25.84vw;
+    width: 100%;
     height: 21.11vh;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
 }
+#signUp .signUp-container .signUp-imgs{
+    width: 40%;
+    position: relative;
+    bottom: -3%;
+    left: -11%;
+}
+#signUp .signUp-container .signUp-imgs img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: max-content;
+}
+
 #signUp .signUp-container .signup-form-items{
-    width: 35.51vw;
-    height: 62.40vh;
+    width: 60%;
     margin: auto;
-    padding-left: 10.15vw;
-    padding-top: 7.01vh;
+    padding: 30px 30px 0;
 }
 #signUp .signUp-container .inputBox{
     position: relative;
@@ -312,9 +296,7 @@ body {
     font-size: 12px;
 }
 #signUp .signUp-container .signUp-form {
-    height: 100%;
-    width: 35.51vw;
-    height: 62.40vh;
+    width: 100%;
 }
 #signUp .signUp-container .signUp-form  .input-content {
     font-family:vagRounded-Light;
@@ -326,7 +308,7 @@ body {
     background: white;
     color: #d190c0;
     position: relative;
-    top: 20px;
+    top: 50px;
     box-shadow: 0px -4px 22.56px 1.44px rgba(89, 17, 98, 0.5);
     border-radius: 26px;
     -webkit-border-radius: 26px;
@@ -399,26 +381,19 @@ input[type="checkbox"] + label {
 
 /* *******EXPERIENCE******** */
 #experience {
-    background-image: url('../img/Capture.PNG');
-    position: relative;
-    z-index: 99;
-    height: 100vh;
-    background-size: cover;
+    background-image: url(../img/footer.png),url(../img/Capture.PNG);
+    background-color: azure;
+    background-size: contain,cover;
     background-repeat: no-repeat;
-    background-position: 100% center;
+    background-position: center bottom, center center;
 }
-#experience::after {
+/* #experience::after {
     content: '';
     background-image: url(../img/footer.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 30vh;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
+} */
 .experience-content{
     width: 92vw;
 }
@@ -426,13 +401,12 @@ input[type="checkbox"] + label {
     text-align: center;
 }
 #experience .experience-carousel {
-    margin-top: 30px;
+    margin: 30px 0;
     position: relative;
 }
 #experience .experience-carousel .slide-card{
     background: #ffe6f9;
-    width: 22vw;
-    height: 48vh;
+    width: 100%;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -462,9 +436,14 @@ input[type="checkbox"] + label {
     padding: 5px 0;
 }
 #experience .experience-carousel .slide-card .slide-title p{
-    font-size: 11px;
+    font-size: 9px;
     color: #9b6eae;
     font-weight: 500;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 #experience .experience-carousel ul.slick-dots{
     /* display: none !important; */
@@ -511,10 +490,9 @@ input[type="checkbox"] + label {
 
 }
 
-/* **********FOOTER********** */
+/* **********FOOTER********** */    
 #footer {
    position: relative;
-    height: 20vh;
 }
 /* #footer .footer-img {
     background-image: url(../img/footer.png);
@@ -524,9 +502,7 @@ input[type="checkbox"] + label {
     height: 60vh;
 } */
 .footer-join  {
-    position: relative;
-    top: 40px;
-    z-index: 99;
+    margin: 50px 0 20px;
 }
 
 .footer-join .join-btn {
@@ -560,16 +536,12 @@ input[type="checkbox"] + label {
     display: flex;
     list-style: none;
     position: relative;
-    top: 10vh;
     z-index: 20;
     padding-left: 0px;
 }
 #footer .footer-content >li{
     display: inline-block;
     margin: auto;
-}
-#footer .footer-content >li >.card-img {
-    margin-right: 45px;
 }
 a.hover-img {
     width: 100%;
@@ -596,13 +568,22 @@ a.hover-img {
 .popup-menu .header-content{
     padding: 30px 25px;
 }
+.popup-menu .header-logo{
+    margin: auto;
+}
 .popup-menu .popup-img-01 img{
     width: 350px;
     height: 500px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 .popup-menu .popup-img-02 img{
     width: 350px;
     height: 250px;
+    position: fixed;
+    right: 5%;
+    bottom: 16%;
 }
 .popup-menu .popup-content .popup-title {
     text-align: center;
@@ -631,7 +612,7 @@ a.hover-img {
     width: 100%;
     position: absolute;
     z-index: 20;
-    height: 180px;
+    height: 22vh;
     bottom: 0px;
     left: 0;
 }
@@ -685,6 +666,9 @@ a.hover-img {
     .popup-menu .popup-img-02 img{
         width: 250px;
         height: 200px;
+        position: fixed;
+        right: 5%;
+        bottom: 13%;
     }
     .popup-menu .popup-about .popup-img-02{
         position: absolute;
@@ -820,10 +804,16 @@ a.hover-img {
     .popup-menu .popup-img-01 img{
         width: 200px;
         height: 250px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
     }
     .popup-menu .popup-img-02 img{
         width: 120px;
         height: 120px;
+        position: fixed;
+        right: 0;
+        bottom: 11%;
     }
     .popup-menu .popup-about .popup-img-02{
         position: absolute;
