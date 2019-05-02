@@ -24,4 +24,17 @@ $(document).ready(function () {
     });
 
     $('#fullpage').fullpage({});
+
+    $('a[href^="#"]').on('click', function(event) {
+
+        var target = $( $(this).attr('href') );
+        console.log(target);
+        if( target.length ) {
+            $('.blocker').addClass('hide-class');
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 600);
+        }
+    });
 })  

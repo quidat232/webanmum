@@ -10,19 +10,16 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* background-image: url('../img/Hue_Saturation\ 1.png');
-    background-repeat: no-repeat;
-    background-size: cover; */
     position: relative;
     z-index: 1;
+}
+.hide-class{
+    display: none;
 }
 #fullpage .section {
     overflow: hidden;
 }
 #header {
-    /* background-image: url('../img/Hue_Saturation\ 1.png'); */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
     position: fixed;
     left: 0;
     top: 0;
@@ -30,30 +27,17 @@ body {
     z-index: 99;
 }
 #header .header-content{
-    padding: 30px 25px;
+    padding: 15px 0;
 }
-/* #header .header-menu{
+
+.blocker {
+    z-index: 99;
     padding: 0;
-    flex-direction: row-reverse;
-    padding-right: 10%;
-} */
-#header .header-menu .toggler {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-  }
-  .blocker {
-      z-index: 99;
-      padding: 0;
-      border-radius: 0  ;
-      -webkit-border-radius: 0  ;
-      -moz-border-radius: 0  ;
-      -ms-border-radius: 0  ;
-      -o-border-radius: 0  ;
+    border-radius: 0  ;
+    -webkit-border-radius: 0  ;
+    -moz-border-radius: 0  ;
+    -ms-border-radius: 0  ;
+    -o-border-radius: 0  ;
 }
 .modal a.close-modal::before {
     content: '';
@@ -100,30 +84,12 @@ body {
     align-items: center;
     justify-content: center;
 }
-#header .header-menu .header-btn > div{
-    position: relative;
-    flex: none;
-    width: 100%;
-    height: 2px;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s ease;
+#header .header-menu .header-btn .fa-bars{
+    color: #fff;
+    text-align: center;
+    font-size: 26px;
 }
-#header .header-menu .header-btn > div::before,
-#header .header-menu .header-btn > div::after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: -10px;
-    width: 100%;
-    height: 2px;
-    background: inherit;
-}
-#header .header-menu .header-btn > div::after {
-    top: 10px;
-}
+
 
 /*************ABOUT CSS ***************/
 #about{
@@ -156,12 +122,6 @@ body {
     height: 100%;
 
 }
-/* .about-item{
-    width: 50%;
-    margin-left: auto;
-    text-align: right !important;
-} */
-
 .about-imgs img{
     position: fixed;
     bottom: 12%;
@@ -196,13 +156,9 @@ body {
 }
 #signUp .signUp-container {
     background: white;
-    height: 83vh;
     position: relative;
-    z-index: 100;
     margin: auto;
-    width: 80%;
-    /* top: 70px;
-    left: 10%; */
+    max-width: 1024px;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -210,35 +166,23 @@ body {
     -o-border-radius: 20px;
     display: flex;
 }
-/* #signUp .signUp-container::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-image: url(../img/Layer43.png);
-    width: 100%;
-    height: 100%;
-    background-size: contain;
-    background-position: left bottom;
-    background-repeat: no-repeat;
-    z-index: 100;
-} */
 #signUp .signUp-container::before{
     content: '';
     position: absolute;
-    top: -50px;
-    right: 0;
+    top: 0;
+    left: 50%;
     background-image: url(../img/dangkynhanmau.png);
     width: 100%;
-    height: 21.11vh;
+    height: 18.11vh;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
+    transform: translate(-40%,-50%);
 }
 #signUp .signUp-container .signUp-imgs{
     width: 40%;
     position: relative;
-    bottom: -3%;
+    bottom: -15px;
     left: -11%;
 }
 #signUp .signUp-container .signUp-imgs img{
@@ -246,20 +190,19 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: max-content;
 }
 
 #signUp .signUp-container .signup-form-items{
     width: 60%;
     margin: auto;
-    padding: 30px 30px 0;
+    padding: 60px 95px 0 30px;
 }
 #signUp .signUp-container .inputBox{
     position: relative;
 }
 #signUp .signUp-container .inputBox input,
 #signUp .signUp-container .inputBox select{
-    width: 80%;
+    width: 90%;
     padding: 10px 0;
     font-size: 16px;
     color: #d190c0;
@@ -270,7 +213,6 @@ body {
     font-weight: bold;
     outline: none;
 }
-
 #signUp .signUp-container .inputBox label,
 #signUp .signUp-container .inputBox option {
     position: absolute;
@@ -287,7 +229,6 @@ body {
     -ms-transition: .5s;
     -o-transition: .5s;
 }
-
 #signUp .signUp-container .inputBox input:focus ~ label,
 #signUp .signUp-container .inputBox input:valid ~ label{
     top: -15px;
@@ -295,20 +236,18 @@ body {
     color:#d190c0;
     font-size: 12px;
 }
-#signUp .signUp-container .signUp-form {
-    width: 100%;
-}
 #signUp .signUp-container .signUp-form  .input-content {
     font-family:vagRounded-Light;
     font-size: 14px;
     padding-right: 50px;
 }
-
 #signUp .signUp-container .signUp-btn{
     background: white;
     color: #d190c0;
     position: relative;
-    top: 50px;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
     box-shadow: 0px -4px 22.56px 1.44px rgba(89, 17, 98, 0.5);
     border-radius: 26px;
     -webkit-border-radius: 26px;
@@ -317,7 +256,7 @@ body {
     -o-border-radius: 26px;
     font-size: 20px;
     font-weight: bold;
-    width: 190px;
+    min-width: 190px;
     height: 50px;
     letter-spacing: 1px;
     transition: all .5s;
@@ -345,12 +284,10 @@ input[type="checkbox"] + label {
     color: #d190c0;
     text-decoration: underline;
   }
-  
-  input[type="checkbox"] {
+input[type="checkbox"] {
     opacity: 0;
-  }
-  
-  input[type="checkbox"] + label::before {
+}
+input[type="checkbox"] + label::before {
     content: "\2713";
     border: 1px solid #d190c0;
     border-radius: 3px;
@@ -368,34 +305,23 @@ input[type="checkbox"] + label {
     -o-border-radius: 3px;
 }
   
-  input[type="checkbox"] + label:active::before {
+input[type="checkbox"] + label:active::before {
     transform: scale(0);
-  }
+}
   
-  input[type="checkbox"]:checked+ label::before {
+input[type="checkbox"]:checked+ label::before {
     background-color: #d190c0;
     border-color: #d190c0;
     color: #fff;
     padding: 0 5px;
-  }
+}
 
 /* *******EXPERIENCE******** */
 #experience {
     background-image: url(../img/footer.png),url(../img/Capture.PNG);
-    background-color: azure;
     background-size: contain,cover;
     background-repeat: no-repeat;
     background-position: center bottom, center center;
-}
-/* #experience::after {
-    content: '';
-    background-image: url(../img/footer.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-} */
-.experience-content{
-    width: 92vw;
 }
 #experience .experience-img {
     text-align: center;
@@ -414,7 +340,6 @@ input[type="checkbox"] + label {
     -o-border-radius: 10px;
     margin: auto;
 }
-
 #experience .experience-carousel .slide-card .slide-items{
     padding: 10px 10px;
 }
@@ -445,9 +370,6 @@ input[type="checkbox"] + label {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-#experience .experience-carousel ul.slick-dots{
-    /* display: none !important; */
-}
 #experience .experience-carousel button.owl-prev{
     width: 70px;
     height: 70px;
@@ -460,7 +382,8 @@ input[type="checkbox"] + label {
     background: #a878b4 !important;
     position: absolute;
     left: 0;
-    top: 28%;
+    top: 35%;
+    transform: translateX(-50%);
     opacity: 0.7;
     outline: none;
 }
@@ -476,9 +399,14 @@ input[type="checkbox"] + label {
     background: #a878b4 !important;
     position: absolute;
     right: 0;
-    top: 28%;
+    top: 35%;
+    transform: translateX(50%);
     opacity: 0.7;
     outline: none;
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
 }
 #experience .experience-carousel button.owl-prev span,
 #experience .experience-carousel button.owl-next span {
@@ -489,22 +417,13 @@ input[type="checkbox"] + label {
     background: transparent;
 
 }
-
 /* **********FOOTER********** */    
 #footer {
    position: relative;
 }
-/* #footer .footer-img {
-    background-image: url(../img/footer.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 69% 30%;
-    height: 60vh;
-} */
 .footer-join  {
     margin: 50px 0 20px;
 }
-
 .footer-join .join-btn {
     background: white;
     color:#d190c0;
@@ -516,7 +435,7 @@ input[type="checkbox"] + label {
     -o-border-radius: 26px;
     font-size: 20px;
     font-weight: bold;
-    width: 220px;
+    min-width: 220px;
     height: 60px;
     transition: all .5s;
     -webkit-transition: all .5s;
@@ -554,10 +473,6 @@ a.hover-img {
     -ms-transform: translateY(-5px);
     -o-transform: translateY(-5px);
 }
-/* 
-#footer .footer-content .card-img:last-child{
-    margin-right: 0px;
-} */
 .fp-scrollable{
     overflow: hidden;
 }
@@ -589,14 +504,6 @@ a.hover-img {
     text-align: center;
     padding: 15px 0;
 }
-/* .popup-menu .popup-content .popup-title:hover {
-    cursor: pointer;
-    transform: translateY(-5px);
-    -webkit-transform: translateY(-5px);
-    -moz-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    -o-transform: translateY(-5px);
-} */
 .popup-menu .popup-content .popup-title a {
     padding: 15px 0;
 }
@@ -619,7 +526,6 @@ a.hover-img {
 .popup-menu .popup-about {
     position: relative;
 }
-
 .popup-menu .popup-about .popup-img-01{
     position: absolute;
     z-index: 99;
