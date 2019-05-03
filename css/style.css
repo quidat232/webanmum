@@ -16,6 +16,7 @@ body {
 .hide-class{
     display: none;
 }
+
 #fullpage .section {
     overflow: hidden;
 }
@@ -92,7 +93,7 @@ body {
 
 
 /*************ABOUT CSS ***************/
-#about{
+.about{
     margin:0;
     position: relative;
     background-image: url('../img/Hue_Saturation-1.png');
@@ -101,7 +102,7 @@ body {
     background-repeat: repeat-x;
     height: 100vh;
 }
-#about:after{
+.about:after{
     content: '';
     background-size: cover;
     -webkit-background-size: cover;
@@ -146,7 +147,7 @@ body {
 }
 
 /*************SIGN UP CSS ***************/
-#signUp{
+.signUp{
     background-image: url('../img/Capture.PNG');
     position: relative;
     z-index: 99;
@@ -154,7 +155,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-#signUp .signUp-container {
+.signUp .signUp-container {
     background: white;
     position: relative;
     margin: auto;
@@ -166,7 +167,7 @@ body {
     -o-border-radius: 20px;
     display: flex;
 }
-#signUp .signUp-container::before{
+.signUp .signUp-container::before{
     content: '';
     position: absolute;
     top: 0;
@@ -177,31 +178,35 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    transform: translate(-40%,-50%);
+    transform: translate(-30%,-50%);
+    -webkit-transform: translate(-30%,-50%);
+    -moz-transform: translate(-30%,-50%);
+    -ms-transform: translate(-30%,-50%);
+    -o-transform: translate(-30%,-50%);
 }
-#signUp .signUp-container .signUp-imgs{
+.signUp .signUp-container .signUp-imgs{
     width: 40%;
     position: relative;
     bottom: -15px;
     left: -11%;
 }
-#signUp .signUp-container .signUp-imgs img{
+.signUp .signUp-container .signUp-imgs img{
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
 }
 
-#signUp .signUp-container .signup-form-items{
+.signUp .signUp-container .signup-form-items{
     width: 60%;
     margin: auto;
     padding: 60px 95px 0 30px;
 }
-#signUp .signUp-container .inputBox{
+.signUp .signUp-container .inputBox{
     position: relative;
 }
-#signUp .signUp-container .inputBox input,
-#signUp .signUp-container .inputBox select{
+.signUp .signUp-container .inputBox input,
+.signUp .signUp-container .inputBox select{
     width: 90%;
     padding: 10px 0;
     font-size: 16px;
@@ -213,8 +218,8 @@ body {
     font-weight: bold;
     outline: none;
 }
-#signUp .signUp-container .inputBox label,
-#signUp .signUp-container .inputBox option {
+.signUp .signUp-container .inputBox label,
+.signUp .signUp-container .inputBox option {
     position: absolute;
     top: 0;
     left: 0;
@@ -229,19 +234,19 @@ body {
     -ms-transition: .5s;
     -o-transition: .5s;
 }
-#signUp .signUp-container .inputBox input:focus ~ label,
-#signUp .signUp-container .inputBox input:valid ~ label{
+.signUp .signUp-container .inputBox input:focus ~ label,
+.signUp .signUp-container .inputBox input:valid ~ label{
     top: -15px;
     left: 0;
     color:#d190c0;
     font-size: 12px;
 }
-#signUp .signUp-container .signUp-form  .input-content {
+.signUp .signUp-container .signUp-form  .input-content {
     font-family:vagRounded-Light;
     font-size: 14px;
     padding-right: 50px;
 }
-#signUp .signUp-container .signUp-btn{
+.signUp .signUp-container .signUp-btn{
     background: white;
     color: #d190c0;
     position: relative;
@@ -265,13 +270,13 @@ body {
     -ms-transition: all .5s;
     -o-transition: all .5s;
 }
-#signUp .signUp-container .signUp-btn:hover {
+.signUp .signUp-container .signUp-btn:hover {
     background:#d190c0;
     color:#fff;
     box-shadow: 0px -4px 22.56px 1.44px rgba(89, 17, 98, 0.5);
 }
 
-#signUp .signUp-container .signUp-form .input-check{
+.signUp .signUp-container .signUp-form .input-check{
     color: #d190c0;
     font-weight: bold;
     text-align: center;
@@ -317,20 +322,20 @@ input[type="checkbox"]:checked+ label::before {
 }
 
 /* *******EXPERIENCE******** */
-#experience {
+.experience {
     background-image: url(../img/footer.png),url(../img/Capture.PNG);
     background-size: contain,cover;
     background-repeat: no-repeat;
     background-position: center bottom, center center;
 }
-#experience .experience-img {
+.experience .experience-img {
     text-align: center;
 }
-#experience .experience-carousel {
+.experience .experience-carousel {
     margin: 30px 0;
     position: relative;
 }
-#experience .experience-carousel .slide-card{
+.experience .experience-carousel .slide-card{
     background: #ffe6f9;
     width: 100%;
     border-radius: 10px;
@@ -340,10 +345,10 @@ input[type="checkbox"]:checked+ label::before {
     -o-border-radius: 10px;
     margin: auto;
 }
-#experience .experience-carousel .slide-card .slide-items{
+.experience .experience-carousel .slide-card .slide-items{
     padding: 10px 10px;
 }
-#experience .experience-carousel .slide-card .slide-img {
+.experience .experience-carousel .slide-card .slide-img {
     background: #fff;
     width: 100%;
     height: 100%;
@@ -353,14 +358,14 @@ input[type="checkbox"]:checked+ label::before {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-#experience .experience-carousel .slide-card .slide-title h3{
+.experience .experience-carousel .slide-card .slide-title h3{
     color:#bf6bae;
     font-size: 20px;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
     padding: 5px 0;
 }
-#experience .experience-carousel .slide-card .slide-title p{
+.experience .experience-carousel .slide-card .slide-title p{
     font-size: 9px;
     color: #9b6eae;
     font-weight: 500;
@@ -370,7 +375,7 @@ input[type="checkbox"]:checked+ label::before {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-#experience .experience-carousel button.owl-prev{
+.experience .experience-carousel button.owl-prev{
     width: 70px;
     height: 70px;
     line-height: 70px;
@@ -387,7 +392,7 @@ input[type="checkbox"]:checked+ label::before {
     opacity: 0.7;
     outline: none;
 }
-#experience .experience-carousel button.owl-next {
+.experience .experience-carousel button.owl-next {
     width: 70px;
     height: 70px;
     line-height: 70px;
@@ -408,8 +413,8 @@ input[type="checkbox"]:checked+ label::before {
     -ms-transform: translateX(50%);
     -o-transform: translateX(50%);
 }
-#experience .experience-carousel button.owl-prev span,
-#experience .experience-carousel button.owl-next span {
+.experience .experience-carousel button.owl-prev span,
+.experience .experience-carousel button.owl-next span {
     font-size: 107px;
     line-height: 37px;
     color: white;
@@ -663,29 +668,6 @@ a.hover-img {
         width: 350px;
         height: 40px;
     }
-    #header .header-menu .header-btn, .popup-btn{
-        border-radius: 50%;
-        background-color: rgb(27, 66, 145);
-        width: 50px;
-        height: 50px;
-        outline: none;
-        cursor: pointer;
-        transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transition: .5s ease-in-out;
-        -webkit-transition: .5s ease-in-out;
-        -moz-transition: .5s ease-in-out;
-        -ms-transition: .5s ease-in-out;
-        -o-transition: .5s ease-in-out;
-        position: absolute;
-        right: 15%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 }
 @media only screen and (max-width:576px) {
     .popup-menu .header-content{
@@ -743,29 +725,7 @@ a.hover-img {
         width: 100px;
         height: 40px;
     }
-    #header .header-menu .header-btn, .popup-btn {
-        border-radius: 50%;
-        background-color: rgb(27, 66, 145);
-        width: 40px;
-        height: 40px;
-        outline: none;
-        cursor: pointer;
-        transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transition: .5s ease-in-out;
-        -webkit-transition: .5s ease-in-out;
-        -moz-transition: .5s ease-in-out;
-        -ms-transition: .5s ease-in-out;
-        -o-transition: .5s ease-in-out;
-        position: absolute;
-        right: 15%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+
     .popup-menu .popup-video img{
         width: 270px;
         height: 50px;

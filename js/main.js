@@ -23,18 +23,24 @@ $(document).ready(function () {
         }
     });
 
-    $('#fullpage').fullpage({});
+    $('#fullpage').fullpage({
+        anchors: ['firstPage', 'secondPage', '3rdPage'],
+        lockAnchors:true,
+        afterLoad:function(anchorLink,direction){
+            history.pushState(null, null, "index.html");
+        }
+    });
 
     $('a[href^="#"]').on('click', function(event) {
-
         var target = $( $(this).attr('href') );
-        console.log(target);
+        $.modal.close();
+        // console.log(target);
         if( target.length ) {
-            $('.blocker').addClass('hide-class');
             event.preventDefault();
             $('html, body').animate({
                 scrollTop: target.offset().top
             }, 600);
+           
         }
     });
 })  

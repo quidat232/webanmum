@@ -8,19 +8,7 @@
 }
 /* RESPONSIVE HEIGHT 657px */
 @media (min-width:992px) and (max-width:1024px){
-    /* #about::before {
-        content: '';
-        background-image: url(../img/KV.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        position: absolute;
-        width: 45vw;
-        height: 300px;
-        bottom: 25vh;
-        left: 0;
-    } */
-    #about:after{
+    .about:after{
         content: '';
         background-size: cover;
         -webkit-background-size: cover;
@@ -48,15 +36,15 @@
        position: relative;
     }
     /* RESPONSIVE SIGNUP */
-    #signUp .signUp-container .signup-form-items{
+    .signUp .signUp-container .signup-form-items{
         padding: 60px 80px 0 30px;
     }
-    #signUp .signUp-container .signUp-form .input-content{
+    .signUp .signUp-container .signUp-form .input-content{
         font-family:vagRounded-Light;
         font-size: 13px;
         padding-right: 0px;
     }
-    #signUp .signUp-container .signUp-btn{
+    .signUp .signUp-container .signUp-btn{
         background: white;
         color: #d190c0;
         position: relative;
@@ -111,7 +99,7 @@
 }
 @media (min-width:768px) and (max-width:992px){
     /* ABOUT RESPONSIVE */
-   #about .about-logo img{
+   .about .about-logo img{
         width: 300px;
         height: auto;
     }
@@ -127,7 +115,7 @@
         bottom: 13%;
         width: 40%;
     }
-    #about:after{
+    .about:after{
         content: '';
         background-size: cover;
         -webkit-background-size: cover;
@@ -140,50 +128,50 @@
         background-image: url(../img/Shape3.png);
         z-index: 20;
     }
-    #about .about-content p {
+    .about .about-content p {
         font-family: 'Open Sans', sans-serif;
         color: #9963a9;
         font-weight: bold;
         font-size: 13px;
     }
-    #about .about-img {
+    .about .about-img {
         position: absolute;
         right: 0;
         bottom: 0;
         z-index: 2;
     }
-    #about .about-img img {
+    .about .about-img img {
         width: 360px;
         height: auto;
     }
-    #about .about-img-footer img{
+    .about .about-img-footer img{
         width: 100%;
         position: relative;
         z-index: 20;
         height: 240px;
     }
     /* SIGNUP RESPONSIVE */
-    #signUp .signUp-container .signUp-imgs {
+    .signUp .signUp-container .signUp-imgs {
         bottom: -9px;
         left: -11%;
     }
-    #signUp .signUp-container .signup-form-items{
+    .signUp .signUp-container .signup-form-items{
         padding: 15px 30px 0;
     }
-    #signUp .signUp-container .signUp-form {
+    .signUp .signUp-container .signUp-form {
         height: 100%;
         position: relative;
         top: 5vh;
     }
-    #signUp .signUp-container .signUp-form .input-content {
+    .signUp .signUp-container .signUp-form .input-content {
         font-family:vagRounded-Light;
         font-size: 12px;
         padding-right: 50px
     }
-    #signUp .signUp-container .signUp-btn{
+    .signUp .signUp-container .signUp-btn{
         bottom: 5px;
     }
-    #signUp .signUp-container .inputBox input, #signUp .signUp-container .inputBox select{
+    .signUp .signUp-container .inputBox input, #signUp .signUp-container .inputBox select{
         width: 80%;
         padding: 5px 0;
         font-size: 16px;
@@ -195,11 +183,11 @@
         font-weight: bold;
         outline: none;
     }
-    #experience .experience-img img {
+    .experience .experience-img img {
         width: 600px;
         height: 100px;
     }
-    #experience .experience-carousel .slide-card {
+    .experience .experience-carousel .slide-card {
         background: #ffe6f9;
         width: 100%;
         border-radius: 10px;
@@ -210,7 +198,7 @@
         padding-top: 10px;
         margin: auto;
     }
-    #experience .experience-carousel .slide-card .slide-img {
+    .experience .experience-carousel .slide-card .slide-img {
         background: #fff;
         width: 100%;
         height: 100%;
@@ -220,14 +208,14 @@
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
     }
-    #experience .experience-carousel .slide-card .slide-title h3 {
+    .experience .experience-carousel .slide-card .slide-title h3 {
         color: #bf6bae;
         font-size: 16px;
         font-weight: bold;
         font-family: 'Open Sans', sans-serif;
         padding: 0 5px;
     }
-    #experience .experience-carousel .slide-card .slide-title p {
+    .experience .experience-carousel .slide-card .slide-title p {
         font-size: 12px;
         color: #9b6eae;
         padding: 5px 10px 0;
@@ -239,27 +227,27 @@
         text-overflow: ellipsis;
 
     }
-    #experience .experience-carousel button.owl-prev{
+    .experience .experience-carousel button.owl-prev{
         position: absolute;
         left: 0;
         top: 40%;
         opacity: 0.7;
         outline: none;
     }
-    #experience .experience-carousel button.owl-next{
+    .experience .experience-carousel button.owl-next{
         position: absolute;
         right: 0;
         top: 40%;
         opacity: 0.7;
         outline: none
     }
-    #experience .experience-carousel button.owl-prev,
-    #experience .experience-carousel button.owl-next{
+    .experience .experience-carousel button.owl-prev,
+    .experience .experience-carousel button.owl-next{
         width: 50px;
         height: 50px;
         line-height: 50px;
     }
-    #experience .experience-carousel button.owl-prev span, #experience .experience-carousel button.owl-next span{
+    .experience .experience-carousel button.owl-prev span, #experience .experience-carousel button.owl-next span{
         font-size: 70px;
         line-height: 28px;
         color: white;
@@ -316,7 +304,7 @@
         margin-left: auto;
     }
     /* RESPONSIVE signUP */
-    #signUp .signUp-container::before{
+    .signUp .signUp-container::before{
         height: 13.11vh;
         transform: translate(-50%,-70%);
         -webkit-transform: translate(-50%,-70%);
@@ -324,14 +312,14 @@
         -ms-transform: translate(-50%,-70%);
         -o-transform: translate(-50%,-70%);
 }
-    #signUp .signUp-container .signUp-imgs{
+    .signUp .signUp-container .signUp-imgs{
         display: none;
     }
-    #signUp .signUp-container .signup-form-items{
+    .signUp .signUp-container .signup-form-items{
         width: 100%;
         padding: 10px 30px 0;
     }
-    #signUp .signUp-container .signUp-form .input-content{
+    .signUp .signUp-container .signUp-form .input-content{
         font-family: vagRounded-Light;
         font-size: 10px;
         padding-right: 50px;
@@ -372,14 +360,14 @@
         cursor: pointer;
         padding: 0;
     }
-    #signUp .signUp-container .signUp-form .inputCheckbox{
+    .signUp .signUp-container .signUp-form .inputCheckbox{
         color: #d190c0;
         font-weight: bold;
         text-align: center;
         padding: 5px;
         font-size: 16px;
     }
-    #signUp .signUp-container .signUp-img-father::before{
+    .signUp .signUp-container .signUp-img-father::before{
         content: '';
         position: absolute;
         top: -15px;
@@ -391,10 +379,10 @@
         background-position: center 100%;
         background-size: contain;
     }
-    #signUp .signUp-container .signUp-form .input-content p {
+    .signUp .signUp-container .signUp-form .input-content p {
         margin-bottom: 0px;
     }
-    #signUp .signUp-container .inputBox input, #signUp .signUp-container .inputBox select{
+    .signUp .signUp-container .inputBox input, #signUp .signUp-container .inputBox select{
         width: 90%;
         padding: 4px 0;
         font-size: 16px;
@@ -407,13 +395,13 @@
         outline: none;
     }
     /* RESPONSIVE EXPERIENCE */
-    #experience .experience-img img{
+    .experience .experience-img img{
         width: 400px;
         height: 120px;
         padding-top: 40px;
     }
 
-    #experience .experience-carousel .slide-card .slide-title p{
+    .experience .experience-carousel .slide-card .slide-title p{
         display: -webkit-box;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
@@ -459,7 +447,7 @@
         margin: auto;
         text-align: center;
     }
-    #about:after{
+    .about:after{
         content: '';
         background-size: cover;
         -webkit-background-size: cover;
@@ -480,11 +468,11 @@
         width: 50%;
         position: relative;
     }
-    #about .about-logo img{
+    .about .about-logo img{
         width: 200px;
         height: auto;
     }
-    #about .about-content p{
+    .about .about-content p{
         font-family: 'Open Sans', sans-serif;
         color: #9963a9;
         padding: 10px 30px;
@@ -495,10 +483,10 @@
     }
 
     /* RESPONSIVE SIGNUP */
-    #signUp .signUp-container{
+    .signUp .signUp-container{
         margin-top: 30px;
     }
-    #signUp .signUp-container::before{
+    .signUp .signUp-container::before{
         transform: translate(-50%,-100%);
         height: 9.11vh;
         -webkit-transform: translate(-50%,-100%);
@@ -506,10 +494,10 @@
         -ms-transform: translate(-50%,-100%);
         -o-transform: translate(-50%,-100%);
 }
-    #signUp .signUp-container .signUp-imgs{
+    .signUp .signUp-container .signUp-imgs{
         display: none;
     }
-    #signUp .signUp-container .signUp-form{
+    .signUp .signUp-container .signUp-form{
         height: 100%;
         position: relative;
     }
@@ -521,34 +509,34 @@
         text-decoration: underline;
         font-size: 12px;
     }
-    #signUp .signUp-container .signup-form-items{
+    .signUp .signUp-container .signup-form-items{
         width: 100%;
         padding: 0px 15px 0;
     }
-    #signUp .signUp-container .signUp-form .input-content{
+    .signUp .signUp-container .signUp-form .input-content{
         font-family: 'Open Sans', sans-serif;
         font-size: 12px;
         padding-right: 10px;
     }
-    #signUp .signUp-container .inputBox input, 
-    #signUp .signUp-container .inputBox select{
+    .signUp .signUp-container .inputBox input, 
+    .signUp .signUp-container .inputBox select{
         width: 90%;
         padding: 5px 0;
         font-size: 13px;
     }
-    #signUp .signUp-container .inputBox label, 
-    #signUp .signUp-container .inputBox option {
+    .signUp .signUp-container .inputBox label, 
+    .signUp .signUp-container .inputBox option {
         padding: 8px 0;
         font-size: 14px;
     }
-    #signUp .signUp-container .signUp-form .inputCheckbox {
+    .signUp .signUp-container .signUp-form .inputCheckbox {
         color: #d190c0;
         font-weight: bold;
         text-align: center;
         padding: 5px;
         font-size: 14px;
     }
-    #signUp .signUp-container .signUp-btn{
+    .signUp .signUp-container .signUp-btn{
         min-width: 130px;
         height: 40px;
         font-size: 14px;
@@ -599,7 +587,7 @@
     .input-form-milk{
         order: 4;
     }
-    #signUp .signUp-container .signUp-form .input-content p{
+    .signUp .signUp-container .signUp-form .input-content p{
         margin-bottom: 0px;
         display: -webkit-box;
         -webkit-line-clamp: 2;
@@ -608,18 +596,18 @@
         text-overflow: ellipsis;
     }
     /* RESPONSIVE EXPERIENCE  */
-    #experience .experience-img img{
+    .experience .experience-img img{
         width: 50vw;
         height: 10vh;
         padding-top: 0px;
     }
-    #experience .experience-carousel .slide-card .slide-items{
+    .experience .experience-carousel .slide-card .slide-items{
         padding: 15px 15px 5px;
     }
-    #experience .experience-carousel .slide-card .slide-title h3{
+    .experience .experience-carousel .slide-card .slide-title h3{
         margin: 0;
     }
-    #experience .experience-carousel .slide-card .slide-title p{
+    .experience .experience-carousel .slide-card .slide-title p{
         font-size: 12px;
         color: #9b6eae;
         padding: 5px 10px 0;
@@ -630,21 +618,21 @@
         text-overflow: ellipsis;
         margin-bottom: 0;
     }
-    #experience .experience-carousel button.owl-prev span, #experience .experience-carousel button.owl-next span{
+    .experience .experience-carousel button.owl-prev span, #experience .experience-carousel button.owl-next span{
         font-size: 50px;
         line-height: 24px;
         color: white;
         opacity: 0.7;
         background: transparent;
     }
-    #experience .experience-carousel button.owl-prev, 
-    #experience .experience-carousel button.owl-next{
+    .experience .experience-carousel button.owl-prev, 
+    .experience .experience-carousel button.owl-next{
         width: 40px;
         height: 40px;
         line-height: 40px;
         top: 40%;
     }
-    #experience .experience-carousel{
+    .experience .experience-carousel{
         margin: 0px;
         position: relative;
     }
@@ -693,22 +681,22 @@
         padding: 10px 25px;
     }
     /* RESPONSIVE ABOUT */
-    #about .about-logo img{
+    .about .about-logo img{
         width: 200px;
         height: auto;
     }
-    #about .about-content p{
+    .about .about-content p{
         font-family: 'Open Sans', sans-serif;
         color: #9963a9;
         font-weight: bold;
         font-size: 13px;
     }
-    #about .about-img img{
+    .about .about-img img{
         width: 200px;
         height: auto;
         margin-top: 50px;
     }
-    #about .about-img-footer img{
+    .about .about-img-footer img{
         width: 100%;
         position: relative;
         z-index: 20;
@@ -716,7 +704,7 @@
         margin-top: 57px;
     }
     /* RESPONSIVE signUp */
-    #signUp .signUp-container .signUp-form .input-content p{
+    .signUp .signUp-container .signUp-form .input-content p{
         margin-bottom: 0px;
         font-size: 12px;
         padding-right: 20px;
@@ -737,28 +725,28 @@
         cursor: pointer;
         font-size: 10px;
     }
-    #signUp .signUp-container .signUp-form .input-content{
+    .signUp .signUp-container .signUp-form .input-content{
         font-family: 'Open Sans', sans-serif;
         font-size: 10px;
         padding-right: 10px;
     }
-    #signUp .signUp-container .inputBox input, #signUp .signUp-container .inputBox select{
+    .signUp .signUp-container .inputBox input, #signUp .signUp-container .inputBox select{
         padding: 8px 0;
         font-size: 12px;
         border-bottom: 1px solid #d190c0;
     }
-    #signUp .signUp-container .inputBox label, #signUp .signUp-container .inputBox option{
+    .signUp .signUp-container .inputBox label, #signUp .signUp-container .inputBox option{
         padding: 8px 0;
         font-size: 12px;
     }
-    #signUp .signUp-container .signUp-form .inputCheckbox{
+    .signUp .signUp-container .signUp-form .inputCheckbox{
         color: #d190c0;
         font-weight: bold;
         text-align: center;
         padding: 5px;
         font-size: 14px;
     }
-    #signUp .signUp-container .signUp-btn{
+    .signUp .signUp-container .signUp-btn{
         position: relative;
         background: white;
         color: #d190c0;
@@ -779,33 +767,33 @@
         -o-transition: all .5s;
         transform: translateY(25px);
     }
-    #signUp .signUp-success{
+    .signUp .signUp-success{
         position: absolute;
         bottom: 10%;
         left: 27%;
         transform: translateX(-50%);
     }
     /* RESPONSIVE EXPERIENCE  */
-    #experience .experience-carousel{
+    .experience .experience-carousel{
         margin-top: 10px;
         position: relative;
     }
-    #experience .experience-img img{
+    .experience .experience-img img{
         width: 100%;
         height: auto;
     }
 
-    #experience .experience-carousel .slide-card .slide-items{
+    .experience .experience-carousel .slide-card .slide-items{
         padding: 10px 10px;
     }
-    #experience .experience-carousel .slide-card .slide-title h3{
+    .experience .experience-carousel .slide-card .slide-title h3{
         color: #bf6bae;
         font-size: 16px;
         font-weight: bold;
         font-family: 'Open Sans', sans-serif;
         padding: 5px 0 0px;
     }
-    #experience .experience-carousel .slide-card .slide-title p{
+    .experience .experience-carousel .slide-card .slide-title p{
         font-size: 12px;
         color: #9b6eae;
         padding: 0px;
@@ -815,15 +803,15 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    #experience .experience-carousel button.owl-prev span, #experience .experience-carousel button.owl-next span{
+    .experience .experience-carousel button.owl-prev span, #experience .experience-carousel button.owl-next span{
         font-size: 50px;
         line-height: 24px;
         color: white;
         opacity: 0.7;
         background: transparent;
     }
-    #experience .experience-carousel button.owl-prev, 
-    #experience .experience-carousel button.owl-next{
+    .experience .experience-carousel button.owl-prev, 
+    .experience .experience-carousel button.owl-next{
         width: 40px;
         height: 40px;
         line-height: 40px;
