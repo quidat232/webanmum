@@ -434,11 +434,18 @@
     }
 }
 @media (max-width: 576px) {
+    #header .header-menu .header-btn, .popup-btn{
+        width: 40px;
+        height: 40px;
+    }
+    #header .header-menu .header-btn .fa-bars{
+        font-size: 22px;
+    }
     #header .row {
         flex-wrap: nowrap;
     }
     #header .header-content {
-        padding: 5px 25px;
+        padding: 20px 25px;
     }
     /* RESPONSIVE ABOUT */
     .about-items{
@@ -483,6 +490,9 @@
     }
 
     /* RESPONSIVE SIGNUP */
+    .signUp{
+        padding: 60px;
+    }
     .signUp .signUp-container{
         margin-top: 30px;
     }
@@ -500,6 +510,7 @@
     .signUp .signUp-container .signUp-form{
         height: 100%;
         position: relative;
+        padding: 10px 0 0;
     }
     input[type="checkbox"] + label{
         opacity: 1;
@@ -596,6 +607,9 @@
         text-overflow: ellipsis;
     }
     /* RESPONSIVE EXPERIENCE  */
+    .experience{
+        padding: 60px 0;
+    }
     .experience .experience-img img{
         width: 50vw;
         height: 10vh;
@@ -618,7 +632,8 @@
         text-overflow: ellipsis;
         margin-bottom: 0;
     }
-    .experience .experience-carousel button.owl-prev span, #experience .experience-carousel button.owl-next span{
+    .experience .experience-carousel button.owl-prev span, 
+    .experience .experience-carousel button.owl-next span{
         font-size: 50px;
         line-height: 24px;
         color: white;
@@ -641,7 +656,7 @@
         position: relative;
     }
     .footer-join{
-        margin: 10px 0 0;
+        margin: 20px 0 0;
     }
      .footer-join .join-btn{
         font-size: 14px;
@@ -651,9 +666,7 @@
     }
     #footer .footer-content{
         flex-wrap: wrap;
-    }
-    #footer .footer-content .card-img{
-        margin-right: 0px;
+        transform: translateY(80%);
     }
     a.hover-img img{
         width: 110px;
@@ -704,6 +717,9 @@
         margin-top: 57px;
     }
     /* RESPONSIVE signUp */
+    .signUp {
+        padding: 50px 30px;
+    }
     .signUp .signUp-container .signUp-form .input-content p{
         margin-bottom: 0px;
         font-size: 12px;

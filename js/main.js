@@ -24,11 +24,10 @@ $(document).ready(function () {
     });
 
     $('#fullpage').fullpage({
+        menu:'#popup-menu',
         anchors: ['firstPage', 'secondPage', '3rdPage'],
-        lockAnchors:true,
-        afterLoad:function(anchorLink,direction){
-            history.pushState(null, null, "index.html");
-        }
+        responsiveWidth:576,
+        
     });
 
     $('a[href^="#"]').on('click', function(event) {

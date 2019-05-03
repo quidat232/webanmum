@@ -670,6 +670,9 @@ a.hover-img {
     }
 }
 @media only screen and (max-width:576px) {
+    .popup-menu .header-content .header-logo img{
+        height: 40px;
+    }
     .popup-menu .header-content{
         padding: 20px 0px;
     }
